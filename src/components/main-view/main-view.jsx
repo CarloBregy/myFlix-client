@@ -21,7 +21,7 @@ export const MainView = () => {
       },
       Year: 2008,
       Rating: 9,
-      ImagePath: "thedarkknight.png",
+       ImagePath: "https://m.media-amazon.com/images/I/61Z+AfG7LyL._AC_UL640_QL65_.jpg",
       Featured: true,
     },
     {
@@ -41,7 +41,7 @@ export const MainView = () => {
       },
       Year: 1995,
       Rating: 8.6,
-      ImagePath: "se7en.png",
+      ImagePath: "https://m.media-amazon.com/images/I/51jiCveUPiL._AC_UL640_QL65_.jpg",
       Featured: false,
     },
     {
@@ -61,7 +61,7 @@ export const MainView = () => {
       },
       Year: 1994,
       Rating: 8.9,
-      ImagePath: "pulpfiction.png",
+      ImagePath: "https://m.media-amazon.com/images/I/71Nhr2mGlYL._AC_UL640_QL65_.jpg",
       Featured: true,
     }
   ]);

@@ -18459,7 +18459,7 @@ const MainView = ()=>{
             },
             Year: 2008,
             Rating: 9,
-            ImagePath: "thedarkknight.png",
+            ImagePath: "https://m.media-amazon.com/images/I/61Z+AfG7LyL._AC_UL640_QL65_.jpg",
             Featured: true
         },
         {
@@ -18477,7 +18477,7 @@ const MainView = ()=>{
             },
             Year: 1995,
             Rating: 8.6,
-            ImagePath: "se7en.png",
+            ImagePath: "https://m.media-amazon.com/images/I/51jiCveUPiL._AC_UL640_QL65_.jpg",
             Featured: false
         },
         {
@@ -18495,7 +18495,7 @@ const MainView = ()=>{
             },
             Year: 1994,
             Rating: 8.9,
-            ImagePath: "pulpfiction.png",
+            ImagePath: "https://m.media-amazon.com/images/I/71Nhr2mGlYL._AC_UL640_QL65_.jpg",
             Featured: true
         }
     ]);
@@ -18532,7 +18532,7 @@ const MainView = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(MainView, "+ZtYtbvg6Lf5mRy5NFLgwPiEA0A=");
+_s(MainView, "4iHo4/13j19J48J9A8DFkCnbkMM=");
 _c = MainView;
 var _c;
 $RefreshReg$(_c, "MainView");
@@ -18559,7 +18559,7 @@ const MovieCard = ({ movie, onMovieClick })=>{
         onClick: ()=>{
             onMovieClick(movie);
         },
-        children: movie.title
+        children: movie.Title
     }, void 0, false, {
         fileName: "src/components/movie-card/movie-card.jsx",
         lineNumber: 3,
@@ -18592,7 +18592,8 @@ const MovieView = ({ movie, onBackClick })=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: movie.image
+                    src: movie.ImagePath,
+                    className: "movie-image"
                 }, void 0, false, {
                     fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 5,
@@ -18613,7 +18614,7 @@ const MovieView = ({ movie, onBackClick })=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: movie.title
+                        children: movie.Title
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 9,
@@ -18628,14 +18629,14 @@ const MovieView = ({ movie, onBackClick })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: "Author: "
+                        children: "Description: "
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 12,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: movie.author
+                        children: movie.Description
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 13,
@@ -18647,12 +18648,56 @@ const MovieView = ({ movie, onBackClick })=>{
                 lineNumber: 11,
                 columnNumber: 7
             }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: "Genre: "
+                    }, void 0, false, {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: movie.Genre.Name
+                    }, void 0, false, {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/movie-view/movie-view.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: "Director: "
+                    }, void 0, false, {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: movie.Director.Name
+                    }, void 0, false, {
+                        fileName: "src/components/movie-view/movie-view.jsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/movie-view/movie-view.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: onBackClick,
                 children: "Back"
             }, void 0, false, {
                 fileName: "src/components/movie-view/movie-view.jsx",
-                lineNumber: 15,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
