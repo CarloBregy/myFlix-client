@@ -10,7 +10,7 @@ export const MainView = () => {
     fetch("https://movie-api-carlo-b-a8e9d78bfbc9.herokuapp.com/movies", {
  
     headers: {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGRlNTRiOGRiNDY1YmY1OGMyMWY3NzQiLCJVc2VybmFtZSI6IkRhdmlkZTJNYXJ0aW5leiIsIlBhc3N3b3JkIjoiJDJiJDEwJGhySm5WVVpINW1GZEFPaUJ3OFZZbS5BYmlKTk14TW5wNkc5M2kyWFBEOS43d0RhR2NYOVJpIiwiRW1haWwiOiJkYXZpZGUyLm1hcnRpbmV6QGV4YW1wbGUuY29tIiwiQmlydGhkYXkiOiIxOTgzLTA3LTIyVDAwOjAwOjAwLjAwMFoiLCJGYXZvcml0ZU1vdmllcyI6W10sIl9fdiI6MCwiaWF0IjoxNzU5NDAxMjQzLCJleHAiOjE3NjAwMDYwNDMsInN1YiI6IkRhdmlkZTJNYXJ0aW5leiJ9.wGSzNdQNkYrHfNIeOgiODRhe94FcnaI-3BNwR7PVEqU"
+   "Authorization": `Bearer ${token}`
   }
       
     })
