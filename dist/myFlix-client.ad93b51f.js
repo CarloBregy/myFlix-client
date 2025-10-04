@@ -160,11 +160,11 @@
       });
     }
   }
-})({"j0L3E":[function(require,module,exports,__globalThis) {
+})({"55C2U":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 8080;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -18446,11 +18446,7 @@ const MainView = ()=>{
     const [movies, setMovies] = (0, _react.useState)([]);
     const [selectedMovie, setSelectedMovie] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
-        fetch("https://movie-api-carlo-b-a8e9d78bfbc9.herokuapp.com/movies", {
-            headers: {
-                "Authorization": `Bearer ${token}`
-            }
-        }).then((response)=>{
+        fetch("https://movie-api-carlo-b-a8e9d78bfbc9.herokuapp.com/movies", {}).then((response)=>{
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             return response.json();
         }).then((data)=>{
@@ -18475,14 +18471,14 @@ const MainView = ()=>{
         onBackClick: ()=>setSelectedMovie(null)
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 45,
+        lineNumber: 40,
         columnNumber: 7
     }, undefined);
     if (movies.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "The movie list is empty!"
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 53,
+        lineNumber: 48,
         columnNumber: 12
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18492,12 +18488,12 @@ const MainView = ()=>{
                 onMovieClick: (newSelectedMovie)=>setSelectedMovie(newSelectedMovie)
             }, movie.id, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 59,
+                lineNumber: 54,
                 columnNumber: 9
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 57,
+        lineNumber: 52,
         columnNumber: 5
     }, undefined);
 };
@@ -19510,6 +19506,6 @@ $RefreshReg$(_c, "MovieView");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"fF6sh","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1wLPs","prop-types":"GNqOQ"}]},["j0L3E","gYcKb"], "gYcKb", "parcelRequireaec4", {}, null, null, "http://localhost:8080")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"fF6sh","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1wLPs","prop-types":"GNqOQ"}]},["55C2U","gYcKb"], "gYcKb", "parcelRequireaec4", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=myFlix-client.ad93b51f.js.map

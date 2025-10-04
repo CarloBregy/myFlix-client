@@ -8,11 +8,6 @@ export const MainView = () => {
 
   useEffect(() => {
     fetch("https://movie-api-carlo-b-a8e9d78bfbc9.herokuapp.com/movies", {
- 
-    headers: {
-   "Authorization": `Bearer ${token}`
-  }
-      
     })
       .then((response) => {
         if (!response.ok) {
