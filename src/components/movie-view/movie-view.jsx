@@ -5,8 +5,8 @@ export const MovieView = ({ movie, onBackClick }) => {
     <div className="movie-view">
       {movie.ImagePath && (
         <img
-          src={movie.ImagePath}
-          alt={movie.title}
+          src={"movie.image"}
+          alt={movie.Title}
           className="movie-image"
         />
       )}

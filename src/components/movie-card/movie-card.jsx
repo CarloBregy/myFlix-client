@@ -5,8 +5,9 @@ export const MovieCard = ({ movie, onMovieClick }) => {
     <div className="movie-card" onClick={() => onMovieClick(movie)}>
       {movie.image && (
         <img
-          src={`https://movie-api-carlo-b-a8e9d78bfbc9.herokuapp.com/images/${movie.image}`}
+          src={movie.image}
           alt={movie.title}
+          className="movie-image"
         />
       )}
       <h3>{movie.title}</h3>
