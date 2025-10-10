@@ -6,4 +6,9 @@
   width: 150px;
   height: auto;
 }
+
+.logout-container {
+  justify-content: flex-end;
+  display: flex;
+}
 /*# sourceMappingURL=myFlix-client.9f367d21.css.map */
