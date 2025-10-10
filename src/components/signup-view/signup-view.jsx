@@ -30,7 +30,6 @@ export const SignupView = () => {
 
         alert("Signup successful! Logging you in...");
 
-        // ✅ Log in automatically using the same credentials
         return fetch("https://movie-api-carlo-b-a8e9d78bfbc9.herokuapp.com/login", {
           method: "POST",
           body: JSON.stringify({
