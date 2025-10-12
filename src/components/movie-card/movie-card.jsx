@@ -1,20 +1,24 @@
 import PropTypes from "prop-types";
+import { Button, Card } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from 'react-bootstrap/Col';
+import "../movie-card/movie-card.scss";
 
 export const MovieCard = ({ movie, onMovieClick }) => {
   return (
-    <div className="movie-card" onClick={() => onMovieClick(movie)}>
+    <Card onClick={() => onMovieClick(movie)} style={{ cursor: "pointer" }}>
       {movie.image && (
-        <img
-          src={movie.image}
-          alt={movie.title}
-          className="movie-image"
-        />
+        <div className="movie-img-container">
+          <img src={movie.image} alt={movie.title} />
+        </div>
       )}
-      <h3>{movie.title}</h3>
-      <p>Genre: {movie.genre}</p>
-      <p>Year: {movie.year}</p>
-      <p>Rating: {movie.rating}</p>
-    </div>
+      <Card.Body>
+        <Card.Title>{movie.title}</Card.Title>
+        <div>Genre: {movie.genre}</div>
+        <div>Year: {movie.year}</div>
+        <div>Rating: {movie.rating}</div>
+      </Card.Body>
+    </Card>
   );
 };
 
@@ -22,8 +26,8 @@ MovieCard.propTypes = {
   movie: PropTypes.shape({
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    image: PropTypes.string,   // optional
-    director: PropTypes.string, // optional
+    image: PropTypes.string,
+    director: PropTypes.string,
     genre: PropTypes.string,
     year: PropTypes.number,
     rating: PropTypes.number,

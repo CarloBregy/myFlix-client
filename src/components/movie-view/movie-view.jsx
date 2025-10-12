@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
+import "../movie-view/movie-view.scss";
+
+import Col from 'react-bootstrap/Col';
 
 export const MovieView = ({ movie, onBackClick }) => {
   return (
-    <div className="movie-view">
+    <Col md={8} className="movie-view" >
       {movie.ImagePath && (
         <img
-          src={"movie.image"}
+          // src={"movie.ImagePath"}
           alt={movie.Title}
           className="movie-image"
         />
@@ -18,8 +21,8 @@ export const MovieView = ({ movie, onBackClick }) => {
      <p><strong>Year:</strong> {movie.year}</p>
      <p><strong>Rating:</strong> {movie.rating}</p>
 
-      <button onClick={onBackClick}>Back</button>
-    </div>
+      <button onClick={onBackClick}className="back-button">Back</button>
+    </Col>
   );
 };
 
