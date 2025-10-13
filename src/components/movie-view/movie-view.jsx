@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 export const MovieView = ({ movie, onBackClick }) => {
   return (
     <Col md={8} className="movie-view" >
-      {movie.ImagePath && (
+      {movie.image && (
         <img
           // src={"movie.ImagePath"}
           alt={movie.Title}
