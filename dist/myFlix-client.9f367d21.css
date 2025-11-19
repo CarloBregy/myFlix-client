@@ -1,3 +1,23 @@
+.movie-img-container {
+  width: 100%;
+  height: 250px;
+}
+
+.movie-img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.back-button {
+  color: #f5f5f5;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
 :root, [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -13192,25 +13212,5 @@ textarea.form-control-lg {
 .logout-container {
   justify-content: flex-end;
   display: flex;
-}
-
-.movie-img-container {
-  width: 100%;
-  height: 250px;
-}
-
-.movie-img-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.back-button {
-  color: #f5f5f5;
-  background-color: #1e90ff;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 12px;
 }
 /*# sourceMappingURL=myFlix-client.9f367d21.css.map */

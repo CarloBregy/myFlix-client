@@ -2,11 +2,12 @@ import PropTypes from "prop-types";
 import { Button, Card } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
 import "../movie-card/movie-card.scss";
 
-export const MovieCard = ({ movie, onMovieClick }) => {
+export const MovieCard = ({ movie }) => {
   return (
-    <Card onClick={() => onMovieClick(movie)} style={{ cursor: "pointer" }}>
+    <Card>
       {movie.image && (
         <div className="movie-img-container">
           <img src={movie.image} alt={movie.title} />
@@ -17,6 +18,9 @@ export const MovieCard = ({ movie, onMovieClick }) => {
         <div>Genre: {movie.genre}</div>
         <div>Year: {movie.year}</div>
         <div>Rating: {movie.rating}</div>
+        <Link to={`/movies/${encodeURIComponent(movie.id)}`}>
+          <Button variant="link">Open</Button>
+        </Link>
       </Card.Body>
     </Card>
   );
@@ -32,6 +36,5 @@ MovieCard.propTypes = {
     year: PropTypes.number,
     rating: PropTypes.number,
     description: PropTypes.string
-  }).isRequired,
-  onMovieClick: PropTypes.func.isRequired
+  }).isRequired
 };
